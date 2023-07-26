@@ -58,6 +58,8 @@ Project names and contact information link to the particular project or site.
 
 ## Credits
 
+Layout: https://isotropic.co/react-multiple-pages/
+
 New and simplified CSS: 
 https://picocss.com/docs/
 
