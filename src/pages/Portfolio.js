@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import headshot from '../images/headshot.jpg';
 import employeeTracker from '../images/employee-tracker-photo.png';
 import weatherDashboard from '../images/weather-dashboard.png';
 import pokemonGame from '../images/pokemon-game.png';
@@ -15,10 +14,9 @@ import noteTaker from '../images/note-taker.png';
 // </div>
 // </div>
 
-function Project() {
+function Portfolio() {
     return (
         <div>
-            <section id="portfolio">
                 <h1 className="heading-center">Portfolio</h1>
                 <article className="grid">
                     <div className="div1">
@@ -58,9 +56,8 @@ function Project() {
                         </div>
                     </div>
                 </article>
-            </section>
         </div>
     )
 }
 // code here
-export default Project;
+export default Portfolio;

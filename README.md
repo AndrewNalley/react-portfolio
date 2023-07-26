@@ -58,7 +58,9 @@ Project names and contact information link to the particular project or site.
 
 ## Credits
 
-Layout: https://isotropic.co/react-multiple-pages/
+Layout: 
+https://www.geeksforgeeks.org/how-to-create-a-multi-page-website-using-react-js/#
+https://isotropic.co/react-multiple-pages/
 
 New and simplified CSS: 
 https://picocss.com/docs/
