@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { Nav, NavLink, NavMenu }
-    from "./NavElements";
+    from "./NavbarElements";
 
 function Navigation() {
     return (
         <>
             <Nav>
                 <NavMenu>
-                    <NavLink to="/" activeStyle>
+                    <NavLink to="/" activestyle>
                         Home
                     </NavLink>
-                    <NavLink to="/contact" activeStyle>
+                    <NavLink to="/contact" activestyle>
                         Contact
                     </NavLink>
-                    <NavLink to="/projects" activeStyle>
+                    <NavLink to="/projects" activestyle>
                         Blogs
                     </NavLink>
-                    <NavLink to="/Resume" activeStyle>
+                    <NavLink to="/resume" activestyle>
                         Resume
                     </NavLink>
                 </NavMenu>
@@ -24,5 +24,5 @@ function Navigation() {
         </>
     );
 }
-// code here
+
 export default Navigation;
