@@ -20,5 +20,5 @@ function Footer() {
         </div>
     )
 }
-// code here
+
 export default Footer;

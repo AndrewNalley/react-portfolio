@@ -7,5 +7,5 @@ function Header() {
         </div>
     )
 }
-// code here
+
 export default Header;
