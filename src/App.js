@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from './components/Header';
-import Navigation from './components/Navbar';
+import Navigation from './components/NavBar';
 import HomeAbout from './pages/HomeAbout';
 import Contact from './pages/Contact';
 import Project from './pages/Portfolio';
