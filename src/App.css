@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #11191f;
 }
 
 .react-app {
@@ -39,9 +39,6 @@ h3 {
   color: rgb(66, 171, 231);
   font-size: 20px;
 }
-
-
-
 
 .heading-center {
   text-align: center;
