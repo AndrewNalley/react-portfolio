@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Resume() {
-    const googleDocUrl = 'https://docs.google.com/document/d/e/2PACX-1vTgFYVw8ekGHvoLmS2altl2RAAFT1qEpMvnx-wKA0rs5Y-S1nEgFCcvmUyBEBtQR3sFmZUgvslmP0GX/pub?embedded=true';
+    const googleDocUrl = 'https://drive.google.com/file/d/1SwqqGxAmTE46XrJirI9tHqM4btmLYcfl/preview';
+
     return (
         <>
-            <div style={{ width: '100vw'}}>
+            <div className='iframe-container'>
                 <iframe
-                    title="Google Doc"
+                    className='responsive-iframe'
+                    title='Google Doc'
                     src={googleDocUrl}
-                    width="600"
-                    height="800"
-                    style={{ display: 'flex' }}
                 ></iframe>
             </div>
             <a
