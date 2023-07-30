@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Resume() {
+    // pdf from google drive - editable google doc undesireably affected by responsive design
     const googleDocUrl = 'https://drive.google.com/file/d/1SwqqGxAmTE46XrJirI9tHqM4btmLYcfl/preview';
 
     return (
