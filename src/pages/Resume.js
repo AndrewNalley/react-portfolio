@@ -2,24 +2,30 @@ import React from 'react';
 
 function Resume() {
     // pdf from google drive - editable google doc undesireably affected by responsive design
-    const googleDocUrl = 'https://drive.google.com/file/d/1SwqqGxAmTE46XrJirI9tHqM4btmLYcfl/preview';
+    const currentResPDF = 'https://drive.google.com/file/d/1SwqqGxAmTE46XrJirI9tHqM4btmLYcfl/preview';
+    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=1SwqqGxAmTE46XrJirI9tHqM4btmLYcfl';
 
     return (
         <>
+            <h4 className="heading-center">Resume</h4>
             <div className='iframe-container'>
                 <iframe
                     className='responsive-iframe'
                     title='Google Doc'
-                    src={googleDocUrl}
+                    src={currentResPDF}
                 ></iframe>
             </div>
-            <a
-                href="https://docs.google.com/document/d/1s-cFFvgDVXacxeHFOLWv4atzeLtoByBnQx--7XlKWt8/edit?usp=sharing"
-                role="button"
-                className="secondary"
-            >
-                Resume
-            </a>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <a
+                    href={pdfDownloadLink}
+                    role="button"
+                    className="secondary"
+                    download="AndrewNalleyResume.pdf"
+                    style={{ display: 'inline-block', textAlign: 'center' }}
+                >
+                    Download Resume
+                </a>
+            </div>
         </>
     )
 }
