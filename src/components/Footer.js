@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
     return (
-        <div className="grid">
+        <footer className="grid">
             <h3 className="heading-center">Contact</h3>
             <nav className="heading-center">
                 <ul>
@@ -20,7 +20,7 @@ function Footer() {
                     </li>
                 </ul>
             </nav>
-        </div>
+        </footer>
     )
 }
 
