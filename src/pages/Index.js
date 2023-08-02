@@ -8,8 +8,8 @@ import Resume from './Resume';
 import PageNotFound from "./PageNotFound";
 
 function Index() {
+// for page transition effect
     const location = useLocation();
-
     const [displayLocation, setDisplayLocation] = useState(location);
     const [transitionStage, setTransistionStage] = useState("fadeIn");
 
