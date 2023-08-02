@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename='/react-portfolio'>
         <Header />
         <Navigation />
         <Routes>
