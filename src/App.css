@@ -97,25 +97,32 @@ img {
 /* transition CSS */
 
 
-.fade-enter {
-  opacity: 0;
-  transform: translate(0, 25px);
-  z-index: 1;
-}
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transform: translate(0, 0);
-
-  transition: opacity 250ms ease-out, transform 300ms ease;
-}
-.fade-exit {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-.fade-exit.fade-exit-active {
-  opacity: 0;
-  transform: translate(0, 30px);
-
-  transition: opacity 250ms ease-out, transform 300ms ease;
+.fadeIn {
+  animation: 0.5s fadeIn forwards;
 }
 
+.fadeOut {
+  animation: 0.5s fadeOut forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-20px, 0);
+    opacity: 0;
+  }
+}
