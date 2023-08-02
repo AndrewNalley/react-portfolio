@@ -4,15 +4,7 @@ import weatherDashboard from '../images/weather-dashboard.png';
 import pokemonGame from '../images/pokemon-game.png';
 import logoMaker from '../images/logo-maker.png';
 import noteTaker from '../images/note-taker.png';
-
-// project variables
-// const project1 = <div className="div1">
-// <img src={employeeTracker} alt='employee-tracker' />
-// <div className="project-title"><a href="https://github.com/AndrewNalley/employee-tracker">Employee
-//     Tracker</a>
-//     <p>Command-line employee tracking application</p>
-// </div>
-// </div>
+import portfolioPhoto from '../images/portfolio.png';
 
 function Portfolio() {
     return (
@@ -55,9 +47,16 @@ function Portfolio() {
                         <p>Use to write and save notes</p>
                     </div>
                 </div>
+                <div className="div6">
+                    <img src={portfolioPhoto} alt='portfolio' />
+                    <div className="project-title"><a
+                        href="https://github.com/AndrewNalley/react-portfolio">Portfolio Repository</a>
+                        <p>See the code used for this webpage!</p>
+                    </div>
+                </div>
             </article>
         </>
     )
 }
-// code here
+
 export default Portfolio;

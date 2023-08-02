@@ -2,45 +2,31 @@
 
 ## Description
 
-ACCEPTANCE CRITERIA:
+- This landing page will be a useful tool for me, both now and in the future, in that I can direct future employers here to view my work. The goal was to make this page elegant, legible, clear, and easy to navigate. It is elegant because it uses a global color palette and makes use of soft corners. It is legible because the font is large and easy to read. It is clear because the styling does not get in the way of the content. It is easy to navigate because of the nav bar and the large headings. This page will become an important platform for my future work, and it will be a testing area for new styles and ideas. 
 
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
-WHEN I am presented with the Contact section
-THEN I see a contact form with fields for a name, an email address, and a message
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address
+Instead of being another applicant in the ocean of LinkedIn, this site will help me stand out, and I can direct future employers here directly. A simple website is often not so simple, especially if one wishes to maintain a consistent visual language. I have learned that it takes a lot of time to make a legible, usable, and attractive website. 
 
-- This landing page will be a useful tool for me, both now and in the future, in that I can direct future employers here to view my work. The goal was to use HTML and CSS to make this page striking, legible, clear, and easy to navigate. It is striking because it uses a global color palette and makes use of soft corners. It is legible because the font is large and legible. It is clear because the styling does not get in the way of the content. It is easy to navigate because of the nav bar and the large headings. 
-
-This page will become an important platform for my future work, and it will be a testing area for new styles and ideas. 
-
-Instead of being another applicant in the ocean of LinkedIn, this site will help me stand out, and I can direct future employers here directly. 
-
-A simple website is often not so simple, especially if one wishes to maintain a consistent visual language. I have learned that it takes a lot of time to make a legible, usable, and attractive website. 
 
 ## Table of Contents
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Features](#features)
 - [Tests](#tests)
+
 
 ## Usage
 
-Click the nav bar to scroll!
-Project names and contact information link to the particular project or site. 
+See the deployed application at: https://andrewnalley.github.io/react-portfolio/
 
-![Nav Bar](assets/images/nav-bar.png)
-![link](assets/images/project-link.png)
-![contact info](assets/images/contact-info.png)
+Click around and check out my stuff! I am happy with the work I have done and how far I have come. Check out the links at the bottom of the page, or download my resume on the resume page. 
 
 
 ## Credits
+
+Transition UX:
+https://dev.to/fazliddin04/react-router-v6-animated-transitions-diy-3e6l
 
 Embed items from Google Drive:
 https://www.steegle.com/websites/google-sites-howtos/embed-drive-pdf
@@ -90,10 +76,15 @@ SOFTWARE.
 
 ## Features
 
+Smooth page transitions
 React Library
 React Router
 Pico CSS
-Responsive 
+Responsive, mobile-friendly
+
 
 ## Tests
 
+Access a page other than the ones shown in the nav bar to get the 404 page. Something like https://andrewnalley.github.io/react-portfolio/fun-page
+
+Use Google Dev Tools to see the responsiveness of the page.
