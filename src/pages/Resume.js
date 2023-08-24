@@ -2,8 +2,9 @@ import React from 'react';
 
 function Resume() {
     // pdf from google drive - editable google doc undesireably affected by responsive design
-    const currentResPDF = 'https://drive.google.com/file/d/1SwqqGxAmTE46XrJirI9tHqM4btmLYcfl/preview';
-    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=1SwqqGxAmTE46XrJirI9tHqM4btmLYcfl';
+    // search 'share google pdf on webpage' to update
+    const currentResPDF = 'https://drive.google.com/file/d/1zSvf_86TA5x9ACX2DLnQOAVqJD0FV3CY/preview';
+    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=1zSvf_86TA5x9ACX2DLnQOAVqJD0FV3CY';
 
     return (
         <>
