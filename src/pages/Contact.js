@@ -1,98 +1,132 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
-    
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
 
-    const [errors, setErrors] = useState({
-        name: '',
-        email: '',
-        message: '',
-      });
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors }
+    } = useForm();
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-        setErrors({ ...errors, [name]: '' });
+    // displays success message when submission is successful
+    const toastifySuccess = () => {
+        toast('Form sent!', {
+            position: 'bottom-right',
+            autoClose: 5000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            className: 'submit-feedback success',
+            toastId: 'notifyToast'
+        });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        let newErrors = {};
+    const onSubmit = async (data) => {
+        const { name, email, subject, message } = data;
 
-        if (!formData.name.trim()) {
-            newErrors.name = 'Name is required';
-          }
-          if (!formData.email.trim()) {
-            newErrors.email = 'Email is required';
-          }
-          if (!formData.message.trim()) {
-            newErrors.message = 'Message is required';
-          }
-
-          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (formData.email.trim() && !emailRegex.test(formData.email)) {
-      newErrors.email = 'Invalid email format';
-    }
-
-
-         if (Object.keys(newErrors).length > 0) {
-      setErrors(newErrors);
-    } else {
-      // Perform your submission logic here (e.g., send data to the server)
-      alert('Form submitted successfully!');
-    }
+        try {
+            const templateParams = {
+                name,
+                email,
+                subject,
+                message
+            };
+            await emailjs.send(
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
+                templateParams,
+                process.env.REACT_APP_PUBLIC_KEY
+            );
+            reset();
+            toastifySuccess();
+        } catch (e) {
+            console.log(e);
+        }
     };
 
     return (
-        <>
-            <h4 className="heading-center">Contact Me</h4>
-            <article>
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="name">Name:</label>
+
+        <div className='container'>
+            <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
+                <div className='row formRow'>
+                    <div className='col-6'>
                         <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            onBlur={handleChange}
-                        />
-                        {errors.name && <span className="error">{errors.name}</span>}
+                            type='text'
+                            name='name'
+                            {...register('name', {
+                                required: { value: true, message: 'Please enter your name' },
+                                maxLength: {
+                                    value: 30,
+                                    message: 'Please use 30 characters or less'
+                                }
+                            })}
+                            className='form-control formInput'
+                            placeholder='Name'
+                        ></input>
+                        {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                     </div>
-                    <div>
-                        <label htmlFor="email">Email:</label>
+                    <div className='col-6'>
                         <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            onBlur={handleChange}
-                        />
-                        {errors.email && <span className="error">{errors.email}</span>}
+                            type='email'
+                            name='email'
+                            {...register('email', {
+                                required: true,
+                                pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                            })}
+                            className='form-control formInput'
+                            placeholder='Email address'
+                        ></input>
+                        {errors.email && (
+                            <span className='errorMessage'>Please enter a valid email address</span>
+                        )}
                     </div>
-                    <div>
-                        <label htmlFor="message">Message:</label>
+                </div>
+                <div className='row formRow'>
+                    <div className='col'>
+                        <input
+                            type='text'
+                            name='subject'
+                            {...register('subject', {
+                                required: { value: true, message: 'Please enter a subject' },
+                                maxLength: {
+                                    value: 75,
+                                    message: 'Subject cannot exceed 75 characters'
+                                }
+                            })}
+                            className='form-control formInput'
+                            placeholder='Subject'
+                        ></input>
+                        {errors.subject && (
+                            <span className='errorMessage'>{errors.subject.message}</span>
+                        )}
+                    </div>
+                </div>
+                <div className='row formRow'>
+                    <div className='col'>
                         <textarea
-                            id="message"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            onBlur={handleChange}
-                        />
-                        {errors.message && <span className="error">{errors.message}</span>}
+                            rows={3}
+                            name='message'
+                            {...register('message', {
+                                required: true
+                            })}
+                            className='form-control formInput'
+                            placeholder='Message'
+                        ></textarea>
+                        {errors.message && <span className='errorMessage'>Please enter a message</span>}
                     </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </article>
-        </>
+                </div>
+                <button className='submit-btn' type='submit'>
+                    Submit
+                </button>
+            </form>
+            <ToastContainer />
+        </div>
     );
 };
 

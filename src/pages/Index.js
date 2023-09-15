@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation, Routes, Route } from "react-router-dom";
-
 import HomeAbout from './HomeAbout';
 import Contact from './Contact';
 import Project from './Portfolio';

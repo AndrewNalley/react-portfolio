@@ -3,7 +3,12 @@ import React, { useState } from 'react';
 function Header() {
     return (
         <>
-            <h2 className="heading-center">Andrew Nalley <br/>  <h5>Full Stack Web Developer</h5></h2>
+            <div className="heading-center">
+                <h2>Andrew Nalley <br/><br/>
+                    <p>Full Stack Web Developer</p>
+                </h2>
+                
+            </div>
         </>
     )
 }
