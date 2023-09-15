@@ -25,6 +25,9 @@ Click around and check out my stuff! I am happy with the work I have done and ho
 
 ## Credits
 
+Contact form without backend:
+https://medium.com/weekly-webtips/simple-react-contact-form-without-back-end-9fa06eff52d9
+
 Transition UX:
 https://dev.to/fazliddin04/react-router-v6-animated-transitions-diy-3e6l
 
