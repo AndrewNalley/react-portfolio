@@ -25,7 +25,7 @@ Click around and check out my stuff! I am happy with the work I have done and ho
 
 ## Credits
 
-Contact form without backend:
+Contact form without backend using emailJS:
 https://medium.com/weekly-webtips/simple-react-contact-form-without-back-end-9fa06eff52d9
 
 Transition UX:
@@ -80,9 +80,13 @@ SOFTWARE.
 ## Features
 
 Smooth page transitions
+
 React Library
+
 React Router
+
 Pico CSS
+
 Responsive, mobile-friendly
 
 
