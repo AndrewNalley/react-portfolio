@@ -40,6 +40,11 @@ h3 {
   font-size: 20px;
 }
 
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
 .heading-center {
   text-align: center;
 }
