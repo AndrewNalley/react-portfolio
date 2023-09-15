@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 
 const Contact = () => {
+    
     const [formData, setFormData] = useState({
         name: '',
         email: '',
