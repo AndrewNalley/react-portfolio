@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-import emailjs from 'emailjs-com'
 
 const Contact = () => {
 
@@ -51,8 +51,8 @@ const Contact = () => {
     };
 
     return (
-
         <div className='container'>
+            <p className='heading-center'>Send me a message!</p>
             <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div className='row formRow'>
                     <div className='col-6'>

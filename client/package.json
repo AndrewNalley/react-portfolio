@@ -1,6 +1,6 @@
 {
   "homepage": "https://andrewnalley.github.io/react-portfolio",
-  "name": "react-portfolio",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
