@@ -7,7 +7,6 @@ import logoMaker from '../images/logo-maker.png';
 import noteTaker from '../images/note-taker.png';
 import portfolioPhoto from '../images/portfolio.png';
 
-
 function Portfolio() {
     return (
         <>
