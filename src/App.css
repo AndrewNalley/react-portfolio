@@ -34,6 +34,11 @@ h1 {
   font-size: 24px;
 }
 
+h2 {
+  margin: 0%;
+  padding: 0%;
+}
+
 h3 {
   margin: auto;
   color: rgb(66, 171, 231);
@@ -58,11 +63,20 @@ p {
 nav {
   display: flex;
   justify-content: center;
+  padding: 0%;
+  overflow: hidden;
 }
 
 ul {
   display: inline-block;
   text-align: center;
+  padding: 0%;
+}
+
+li {
+  overflow: hidden;
+  padding: 1%;
+  margin: 1%;
 }
 
 .left-align {

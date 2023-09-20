@@ -8,7 +8,7 @@ function HomeAbout() {
             <article className="grid">
                 <img className="headshot" src={headshot} alt='headshot' />
                 <div>
-                    <blockquote>I am a Full-stack Web Developer earning a certificate from the University of Minnesota
+                    <blockquote>I am a Full-stack Web Developer with a certificate from the University of Minnesota
                         Coding Boot Camp, with previous experience as an Administrator and Opera Singer.
                     </blockquote>
                     <blockquote>
