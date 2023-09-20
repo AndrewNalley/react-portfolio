@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -13,12 +13,12 @@ function App() {
 
   return (
     <>
-      <HashRouter>
+      <Router>
         <Header />
         <Navigation />
         <Index />
         <Footer />
-      </HashRouter>
+      </Router>
     </>
   );
 }
