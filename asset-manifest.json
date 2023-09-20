@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.2c8ca23e.css",
-    "main.js": "/react-portfolio/static/js/main.4310146e.js",
+    "main.css": "/react-portfolio/static/css/main.65044679.css",
+    "main.js": "/react-portfolio/static/js/main.b05a33a2.js",
     "static/media/dreamscape.png": "/react-portfolio/static/media/dreamscape.97ab06b9bef34fbff974.png",
     "static/media/pokemon-game.png": "/react-portfolio/static/media/pokemon-game.993319806fc790935424.png",
     "static/media/fa-solid-900.ttf": "/react-portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
@@ -19,11 +19,11 @@
     "static/media/fa-v4compatibility.ttf": "/react-portfolio/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
     "static/media/fa-v4compatibility.woff2": "/react-portfolio/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/react-portfolio/index.html",
-    "main.2c8ca23e.css.map": "/react-portfolio/static/css/main.2c8ca23e.css.map",
-    "main.4310146e.js.map": "/react-portfolio/static/js/main.4310146e.js.map"
+    "main.65044679.css.map": "/react-portfolio/static/css/main.65044679.css.map",
+    "main.b05a33a2.js.map": "/react-portfolio/static/js/main.b05a33a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c8ca23e.css",
-    "static/js/main.4310146e.js"
+    "static/css/main.65044679.css",
+    "static/js/main.b05a33a2.js"
   ]
 }
