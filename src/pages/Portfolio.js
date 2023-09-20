@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 
+import dreamscape from '../images/dreamscape.png';
 import employeeTracker from '../images/employee-tracker-photo.png';
 import weatherDashboard from '../images/weather-dashboard.png';
 import pokemonGame from '../images/pokemon-game.png';
 import logoMaker from '../images/logo-maker.png';
 import noteTaker from '../images/note-taker.png';
 import portfolioPhoto from '../images/portfolio.png';
-import dreamscape from '../images/dreamscape.png';
-
-console.log(dreamscape.valueOf());
 
 function Portfolio() {
     return (
@@ -70,7 +68,5 @@ function Portfolio() {
         </>
     )
 }
-
-console.log(Portfolio.toString())
 
 export default Portfolio;

@@ -2,9 +2,12 @@ import React from 'react';
 
 function Resume() {
     // pdf from google drive - editable google doc undesireably affected by responsive design
-    // search 'share google pdf on webpage' to update
-    const currentResPDF = 'https://drive.google.com/file/d/1zSvf_86TA5x9ACX2DLnQOAVqJD0FV3CY/preview';
-    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=1zSvf_86TA5x9ACX2DLnQOAVqJD0FV3CY';
+    // search 'share google pdf on webpage' for update help
+    // upload pdf to drive, share (accessible to all), then copy and paste the portion noted within both links below 
+    // example: https://drive.google.com/file/d/ <copy-me> /view?usp=sharing
+
+    const currentResPDF = 'https://drive.google.com/file/d/1MLhWYRrZDqdUBbOa-PyZvAQy2VMn1uRs/preview';
+    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=1MLhWYRrZDqdUBbOa-PyZvAQy2VMn1uRs';
 
     return (
         <>
