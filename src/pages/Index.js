@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, Routes, Route } from "react-router-dom";
+import { useLocation, Routes, Route, Navigate } from "react-router-dom";
+
 import HomeAbout from './HomeAbout';
 import Contact from './Contact';
 import Project from './Portfolio';
@@ -26,10 +27,11 @@ function Index() {
             }}
         >
             <Routes location={displayLocation}>
-                <Route path='/' element={<HomeAbout />} />
-                <Route path='/projects' element={<Project />} />
-                <Route path='/contact' element={<Contact />} />
-                <Route path='/resume' element={<Resume />} />
+                <Route path='/react-portfolio' element={<HomeAbout />} />
+                <Route path='/react-portfolio/projects' element={<Project />} />
+                <Route path='/react-portfolio/contact' element={<Contact />} />
+                <Route path='/react-portfolio/resume' element={<Resume />} />
+                <Route path='*' element={<Navigate to='/react-portfolio' />} />
             </Routes>
         </div>
     )
