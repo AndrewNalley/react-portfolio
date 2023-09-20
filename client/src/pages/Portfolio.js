@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import dreamscape from '../images/dreamscape.png'
+import dreamscape from '../images/dreamscape.png';
 import employeeTracker from '../images/employee-tracker-photo.png';
 import weatherDashboard from '../images/weather-dashboard.png';
 import pokemonGame from '../images/pokemon-game.png';
 import logoMaker from '../images/logo-maker.png';
 import noteTaker from '../images/note-taker.png';
 import portfolioPhoto from '../images/portfolio.png';
+
 
 function Portfolio() {
     return (
