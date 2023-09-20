@@ -8,25 +8,27 @@ import noteTaker from '../images/note-taker.png';
 import portfolioPhoto from '../images/portfolio.png';
 import dreamscape from '../images/dreamscape.png';
 
+console.log(dreamscape.valueOf());
+
 function Portfolio() {
     return (
         <>
             <h4 className="heading-center">Portfolio</h4>
             <article className="grid">
-                <div>
+                <div id='proj-1'>
                     <img src={dreamscape} alt='dreamscape' />
                     <div className="project-title"><a href="https://whispering-crag-58704-755d34513186.herokuapp.com/">Dreamscape</a>
                         <p>Create calming and inspirational environments</p>
                     </div>
                 </div>
-                <div>
+                <div id='proj-2'>
                     <img src={employeeTracker} alt='employee-tracker' />
                     <div className="project-title"><a href="https://github.com/AndrewNalley/employee-tracker">Employee
                         Tracker</a>
                         <p>Command-line employee tracking application</p>
                     </div>
                 </div>
-                <div>
+                <div id='proj-3'>
                     <img src={weatherDashboard} alt='weather-dashboard' />
                     <div className="project-title"><a href="https://andrewnalley.github.io/weather-dashboard/">Weather
                         Dashboard</a>
@@ -35,21 +37,21 @@ function Portfolio() {
                 </div>
             </article>
             <article className="grid">
-                <div>
+                <div id='proj-4'>
                     <img src={pokemonGame} alt='pokemon-game' />
                     <div className="project-title"><a href="https://2meng.github.io/Whos-that-pokemon/">Who's
                         that Pokémon?!</a>
                         <p>Test your pokémon knowledge!</p>
                     </div>
                 </div>
-                <div>
+                <div id='proj-5'>
                     <img src={logoMaker} alt='logo-maker' />
                     <div className="project-title"><a href="https://github.com/AndrewNalley/logo-maker">Logo
                         Maker</a>
                         <p>Simple logos are so hot right now. Quickly generate an SVG logo!</p>
                     </div>
                 </div>
-                <div>
+                <div id='proj-6'>
                     <img src={noteTaker} alt='note-taker' />
                     <div className="project-title"><a
                         href="https://aqueous-springs-29735-51eb1397bb8e.herokuapp.com/">Note
@@ -57,7 +59,7 @@ function Portfolio() {
                         <p>Use to write and save notes</p>
                     </div>
                 </div>
-                <div>
+                <div id='proj-7'>
                     <img src={portfolioPhoto} alt='portfolio' />
                     <div className="project-title"><a
                         href="https://github.com/AndrewNalley/react-portfolio">Portfolio Repository</a>
@@ -68,5 +70,7 @@ function Portfolio() {
         </>
     )
 }
+
+console.log(Portfolio.toString())
 
 export default Portfolio;
