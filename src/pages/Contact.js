@@ -30,6 +30,7 @@ const Contact = () => {
     const onSubmit = async (data) => {
         const { name, email, subject, message } = data;
 
+        console.log(name, email, subject, message);
         try {
             const templateParams = {
                 name,
@@ -45,6 +46,7 @@ const Contact = () => {
             );
             reset();
             toastifySuccess();
+            console.log(toastifySuccess().value);
         } catch (e) {
             console.log(e);
         }

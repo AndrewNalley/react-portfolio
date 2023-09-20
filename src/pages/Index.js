@@ -4,7 +4,6 @@ import HomeAbout from './HomeAbout';
 import Contact from './Contact';
 import Project from './Portfolio';
 import Resume from './Resume';
-import PageNotFound from "./PageNotFound";
 
 function Index() {
 // for page transition effect
@@ -31,7 +30,6 @@ function Index() {
                 <Route path='/projects' element={<Project />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/resume' element={<Resume />} />
-                <Route path='*' element={<PageNotFound />} />
             </Routes>
         </div>
     )
