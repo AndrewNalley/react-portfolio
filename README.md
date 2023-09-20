@@ -25,6 +25,9 @@ Click around and check out my stuff! I am happy with the work I have done and ho
 
 ## Credits
 
+Fix for reload routing as GitHub doesn't support SPAs:
+https://github.com/rafgraph/spa-github-pages
+
 Contact form without backend using emailJS:
 https://medium.com/weekly-webtips/simple-react-contact-form-without-back-end-9fa06eff52d9
 
