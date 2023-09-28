@@ -6,8 +6,8 @@ function Resume() {
     // upload pdf to drive, share (accessible to all), then copy and paste the portion noted within both links below 
     // example: https://drive.google.com/file/d/ <copy-me> /view?usp=sharing
 
-    const currentResPDF = 'https://drive.google.com/file/d/1MLhWYRrZDqdUBbOa-PyZvAQy2VMn1uRs/preview';
-    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=1MLhWYRrZDqdUBbOa-PyZvAQy2VMn1uRs';
+    const currentResPDF = 'https://drive.google.com/file/d/1jvCnEkm7KvahXzfDj-g-BBc8-pn7D3bA/preview';
+    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=1jvCnEkm7KvahXzfDj-g-BBc8-pn7D3bA';
 
     return (
         <>
