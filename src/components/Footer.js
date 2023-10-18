@@ -6,7 +6,6 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Footer() {
     return (
         <footer className="grid">
-            <h3 className="heading-center">Contact</h3>
             <nav className="heading-center">
                 <ul>
                     <li>
