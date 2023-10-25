@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import dreamscape from '../images/dreamscape.png';
 import employeeTracker from '../images/employee-tracker-photo.png';
