@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import headshot from '../images/headshot.jpg';
 
 function HomeAbout() {
@@ -9,16 +9,9 @@ function HomeAbout() {
                 <img className="headshot" src={headshot} alt='headshot' />
                 <div>
                     <blockquote>I am a Full-stack Web Developer with a certificate from the University of Minnesota
-                        Coding Boot Camp, with previous experience as an Administrator and Opera Singer.
-                    </blockquote>
-                    <blockquote>
-                        As a creative and driven professional with a flair for the aesthetic side of things, I have been
-                        drawn to the many facets of development and design.
-                    </blockquote>
-                    <blockquote>
-                        I approach development with curiousity, tenacious problem solving, and continuous refinement.
-                    </blockquote>
-                    <blockquote>
+                        Coding Boot Camp, with previous experience as an Administrator and Opera Singer.<br/><br/>
+                        As professional with a flair for the aesthetic side of things, I have been
+                        drawn to the many facets of development and design. <br/><br/>
                         I can't wait to bring my skills and years of professional experience to your
                         project!
                     </blockquote>
