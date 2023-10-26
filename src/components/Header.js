@@ -4,10 +4,8 @@ function Header() {
     return (
         <>
             <div className="heading-center">
-                <h2>Andrew Nalley 
-                    <p>Full Stack Web Developer</p>
-                </h2>
-                
+                <h2>Andrew Nalley</h2>
+                <p>Full Stack Web Developer</p>
             </div>
         </>
     )

@@ -5,9 +5,10 @@ function Resume() {
     // search 'share google pdf on webpage' for update help
     // upload pdf to drive, share (accessible to all), then copy and paste the portion noted within both links below 
     // example: https://drive.google.com/file/d/ <copy-me> /view?usp=sharing
+    // https://drive.google.com/file/d/14R9dm-UoTybKC9roQvpGy0tjZhoWHoyH/view?usp=drive_link
 
-    const currentResPDF = 'https://drive.google.com/file/d/1jvCnEkm7KvahXzfDj-g-BBc8-pn7D3bA/preview';
-    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=1jvCnEkm7KvahXzfDj-g-BBc8-pn7D3bA';
+    const currentResPDF = 'https://drive.google.com/file/d/14R9dm-UoTybKC9roQvpGy0tjZhoWHoyH/preview';
+    const pdfDownloadLink = 'https://drive.google.com/uc?export=download&id=14R9dm-UoTybKC9roQvpGy0tjZhoWHoyH';
 
     return (
         <>
